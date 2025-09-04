@@ -34,7 +34,7 @@ RPC 允许一个程序（称为服务消费者）像调用自己程序的方法�
 
 ## 简易版
 
-![image.png](docs\image.png)
+![image.png](./docs/image.png)
 
 
 使用高性能的 NIO 框架 Vert.x 来作为 RPC 框架的 web 服务器。
@@ -45,7 +45,7 @@ RPC 允许一个程序（称为服务消费者）像调用自己程序的方法�
 
 序列化：
 
-![image.png](docs\image%202.png)
+![image.png](./docs/image%202.png)
 
 ### **提供者处理调用 - 请求处理器**
 
@@ -113,7 +113,7 @@ watchClient：用于监视 etcd 中键的变化，并在键的值发生变化时
 只有服务‌消费者执行的方法中，可以创建 wat⁢ch 监听器，那么比较合适的位置就是‌服务发现方法（serviceDiscovery）。可以对本次获取到的所有‍服务节点 key 进行监听。
 还需要防止‌重复监听同一个 k⁢ey，可以通过定义‌一个已监听 key 的集合来实现。
 
-![image.png](docs\image%203.png)
+![image.png](./docs/image%203.png)
 
 分析 HT‌TP 请求结构，我⁢们能够得到 RPC‌ 消息所需的信息：
 魔数：作用是安全校验，防止服务器处理了非框架发来的乱七八糟的消息（类似 HTTPS 的安全证书）
@@ -124,7 +124,7 @@ watchClient：用于监视 etcd 中键的变化，并在键的值发生变化时
 
 RPC协议结构（参考Dubbo的协议）
 
-![image.png](docs\image%204.png)
+![image.png](./docs/image%204.png)
 
 ## 负载均衡
 
