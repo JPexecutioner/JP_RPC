@@ -4,7 +4,6 @@ import com.yupi.example.common.service.UserService;
 import com.yupi.yurpc.registry.LocalRegistry;
 import com.yupi.yurpc.server.HttpServer;
 import com.yupi.yurpc.server.VertxHttpServer;
-
 /**
  * 简易服务提供者示例
  *
